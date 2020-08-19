@@ -314,6 +314,27 @@
     </script>
     <!-- Built with love using Web Starter Kit -->
 
+    <script src = "https://js.userpilot.io/61tk95i6/latest.js"></script>
+      <script>
+        userpilot.identify(
+
+          "666", // Used to identify users 
+          {
+               name: "John Doeoe", // Full name
+               email: "customer@example.com", // Email address
+               created_at: "1519205055" // Signup date as a Unix timestamp
+               company:  // optional 
+               {
+                 id: "UNIQUE COMPANY ID", // Company Unique ID
+                 created_at: "1519205055" // Signup date as a Unix timestamp
+               }
+                  // Additional user properties
+                  // plan: "free",
+                  // trialEnds: '2019-10-31T09:29:33.401Z'"
+          }
+        );
+    </script>
+
     <script>
       
 
@@ -348,11 +369,33 @@
         item_name: "shampoo"
       });
 
+
+
+      //GA
+
       gtag('event', 'my purchase', {
         'event_category' : 'purchase',
         'event_label' : 'soap'
       });
 
+
+      // Userpilot
+
+
+
+
     </script>
+    
+    <script>
+      userpilot.track("Simple Event");
+    </script>
+
+    <script>
+      var meta = {URL: "/growth"; Test: "Hello"};
+      userpilot.track("Page Event", meta);
+      userpilot.track("Simple Event");
+    </script>
+
+
   </body>
 </html>
