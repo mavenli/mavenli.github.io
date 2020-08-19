@@ -53,6 +53,7 @@
     <link rel="stylesheet" href="styles/main.css">
 
     <script src="https://fast.appcues.com/71873.js"></script>
+    <script src = "https://js.userpilot.io/61tk95i6/latest.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149124942-1"></script>
@@ -63,6 +64,7 @@
 
       gtag('config', 'UA-149124942-1');
     </script>
+
 
 
   </head>
@@ -314,15 +316,14 @@
     </script>
     <!-- Built with love using Web Starter Kit -->
 
-    <script src = "https://js.userpilot.io/61tk95i6/latest.js"></script>
-      <script>
+    <script>
         userpilot.identify(
 
           "666", // Used to identify users 
           {
                name: "John Doeoe", // Full name
                email: "customer@example.com", // Email address
-               created_at: "1519205055" // Signup date as a Unix timestamp
+               created_at: "1519205055", // Signup date as a Unix timestamp
                company:  // optional 
                {
                  id: "UNIQUE COMPANY ID", // Company Unique ID
@@ -385,13 +386,13 @@
 
 
     </script>
-    
+
     <script>
       userpilot.track("Simple Event");
     </script>
 
     <script>
-      var meta = {URL: "/growth"; Test: "Hello"};
+      var meta = {URL: "/growth", Test: "Hello"};
       userpilot.track("Page Event", meta);
       userpilot.track("Simple Event");
     </script>
